@@ -1,11 +1,12 @@
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
+import { fetchLatestInvoices, fetchCardData } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
 
-export default async function Page() {
+export default function Page() {
   // const [latestInvoices, { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers }] = await Promise.all([fetchLatestInvoices(), fetchCardData()]);
   // const latestInvoices = await fetchLatestInvoices();
   // const { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers} = await fetchCardData()
