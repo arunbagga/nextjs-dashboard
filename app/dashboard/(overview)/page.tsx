@@ -6,7 +6,7 @@ import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
 
-export default function Page() {
+export default async function Page() {
   // const [latestInvoices, { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers }] = await Promise.all([fetchLatestInvoices(), fetchCardData()]);
   // const latestInvoices = await fetchLatestInvoices();
   // const { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers} = await fetchCardData()
